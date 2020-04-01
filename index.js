@@ -2,12 +2,15 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
+// ======= MIDDLEWARES ========
+app.set('view engine', 'pug')
+
 // ========== MODULES ==========
 
 
 // === ENTRY POINT MODULE ===
 
-const entry_point = require('./entry-point')
+const entry_point = require('./routes/entry-point')
 
 app.get('/', entry_point)
 

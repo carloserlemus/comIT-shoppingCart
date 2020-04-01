@@ -21,3 +21,11 @@ Steps to Create Project.
     HINT: Requires GET and LISTEN methods.
 9. Create a module for the root directory.
     HINT: requires importing and exporting.
+10. Introduce Pug 
+    HINT: requires middleware and 'views' folder.
+11. Create a file to which all pug files refer to
+    HINT: layout.pug and extends
+
+
+
+
