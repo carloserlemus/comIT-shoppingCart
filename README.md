@@ -34,6 +34,7 @@ Steps to Create Project.
         NOTE: use HTML TO PUG converter to make this process faster.
 
         2. You can install bootstrap examples into the pug file.
+13. Create a new page: routes, views, and updating the index.js
 
 
 

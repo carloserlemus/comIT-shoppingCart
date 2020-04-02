@@ -7,11 +7,12 @@ app.set('view engine', 'pug')
 app.use(express.static('public'))
 
 // ========== MODULES ==========
-// ==== ENTRY POINT MODULE ====
 
 const entry_point = require('./routes/entry-point')
+const categories = require('./routes/categories')
 
 app.get('/', entry_point)
+app.get('/categories', categories)
 
 // ==========================
 
