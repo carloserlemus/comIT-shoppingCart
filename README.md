@@ -25,6 +25,16 @@ Steps to Create Project.
     HINT: requires middleware and 'views' folder.
 11. Create a file to which all pug files refer to
     HINT: layout.pug and extends
+12. Refer to a CSS file in PUG.
+    HINT: express method, public folder and a use method...
+
+    OPTIONAL: ADDING BOOTSTRAP.
+        1. Copy-paste the stylesheet <link> into your <head> before all other stylesheets to load our CSS. [Link provided by bootstrap website.]
+        
+        NOTE: use HTML TO PUG converter to make this process faster.
+
+        2. You can install bootstrap examples into the pug file.
+
 
 
 
