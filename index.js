@@ -8,10 +8,10 @@ app.use(express.static('public'))
 
 // ========== MODULES ==========
 
-const entry_point = require('./routes/entry-point')
+const home = require('./routes/home')
 const categories = require('./routes/categories')
 
-app.get('/', entry_point)
+app.get('/', home)
 app.get('/categories', categories)
 
 // ==========================
