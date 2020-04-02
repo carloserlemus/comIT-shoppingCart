@@ -39,6 +39,25 @@ Steps to Create Project.
 14. Reduce duplication with layout.pug.
 15. Add a gallery in the home view.
     HINT: Use bootstrap or other resources!
+
+16. Evaluating our data structure...
+    What information do we offer and can be used?
+        Name, Description, Price, and Rating.
+
+        Create an object in the home page that holds all the pertinent
+        information and send it via the res.render method.
+
+        res.render(views, optional param)
+        It accepts an optional parameter that is an object containing local variables for the view
+
+        example res.render ('home', {object})
+
+        note: {object} is the same as {objectX: objectY}
+        Where objectX is passed to the view with the property of the object we defined.
+17. Convert the product object into an array of objects.
+18. Create some logic in pug that iterates over all the objects in the array such that we can use it to reference data.
+
+
     
 
 
