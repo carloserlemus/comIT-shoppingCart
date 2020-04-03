@@ -56,6 +56,8 @@ Steps to Create Project.
         Where objectX is passed to the view with the property of the object we defined.
 17. Convert the product object into an array of objects.
 18. Create some logic in pug that iterates over all the objects in the array such that we can use it to reference data.
+19. Creating A New End Point.
+    - admin, 
 
 
     

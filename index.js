@@ -10,9 +10,11 @@ app.use(express.static('public'))
 
 const home = require('./routes/home')
 const categories = require('./routes/categories')
+const admin = require('./routes/admin')
 
 app.get('/', home)
 app.get('/categories', categories)
+app.get('/admin', admin)
 
 // ==========================
 
