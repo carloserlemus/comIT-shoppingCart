@@ -61,6 +61,12 @@ Steps to Create Project.
 20. Create a New End Point.. Admin/index and admin/create.
     HINT: When restructuring and adding separate folders, be aware that extends will require some logic to navigate to the 
         layout.pug
+21. Update and Delete
+    HINT: 1. ROUTES. 2. VIEWS.
+
+22. Introducing the DataBase.
+
+
 
 
     
