@@ -1,0 +1,17 @@
+extends ../layout.pug
+
+block content
+  h1 Admin Index
+  a.btn.btn-primary(href='/admin/create') Create
+  .row
+    each prnt in printProducts
+      .col
+        .card(style='width: 18rem;')
+          img.card-img-top(src=prnt.image alt='...')
+          .card-body
+            h5.card-title=prnt.name
+            p.card-text=prnt.desc
+            p.card-text Price: #{prnt.price}
+            p.card-text Rating: #{prnt.rating}
+            a.btn.btn-info(href='#') Update
+            a.btn.btn-danger(href='#') Delete

@@ -10,12 +10,13 @@ app.use(express.static('public'))
 
 const home = require('./routes/home')
 const categories = require('./routes/categories')
-const admin = require('./routes/admin')
+const adminIndex = require('./routes/admin/index')
+const adminCreate = require('./routes/admin/create')
 
 app.get('/', home)
 app.get('/categories', categories)
-app.get('/admin', admin)
-
+app.get('/admin/', adminIndex)
+app.get('/admin/create', adminCreate)
 // ==========================
 
 app.listen(port, (err) => {
