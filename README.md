@@ -64,7 +64,42 @@ Steps to Create Project.
 21. Update and Delete
     HINT: 1. ROUTES. 2. VIEWS.
 
-22. Introducing the DataBase.
+22. Introducing the DataBase
+    Login to Mongodb Atlas and get the information required
+
+    example: mongodb://carloslemus:<password>@cerl-shard-00-00-newbx.mongodb.net:27017,cerl-shard-00-01-newbx.mongodb.net:27017,cerl-shard-00-02-newbx.mongodb.net:27017/test?ssl=true&replicaSet=CERL-shard-0&authSource=admin&retryWrites=true&w=majority
+
+    Go to the admin.js
+
+    bind a const url to const url = "mongodb://carloslemus:<password>@cerl-shard-00-00-newbx.mongodb.net:27017,cerl-shard-00-01-newbx.mongodb.net:27017,cerl-shard-00-02-newbx.mongodb.net:27017/test?ssl=true&replicaSet=CERL-shard-0&authSource=admin&retryWrites=true&w=majority"
+
+    replace test with app name.. in this case shoppingcart (printshop)
+
+    make sure mongoose dependancy is installed.
+
+    IMPLEMENTATION OF MONGOOSE
+
+    first require it
+    then declare the url
+
+    then
+        mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
+
+    NEXT
+    We must create a MODEL
+            const printModel = mongoose.model('Print', {
+                name: String,
+                desc: String,
+                price: Number,
+                rating: Number,
+                image: String
+            })
+    NEXT
+    We need to query it? We need to remember async.
+    ...
+
+    Install Body Parser
+
 
 
 

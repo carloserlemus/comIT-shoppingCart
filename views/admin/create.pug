@@ -1,4 +1,26 @@
 extends ../layout.pug
 
 block content
-    h1 Hello from create
+    p This is the form that you can use to create a new product.
+    form(action="/admin/create" method="post")
+        .form-group.row
+            label.col-sm-2.col-form-label(for='inputName') Name
+            .col-sm-10
+                input#inputName.form-control(type='text' placeholder='Name' name="Name")
+        .form-group.row
+            label.col-sm-2.col-form-label(for='inputDescription') Description
+            .col-sm-10
+                input#inputDescription.form-control(type='text' placeholder='Description' name="Description")
+        .form-group.row
+            label.col-sm-2.col-form-label(for='inputPrice') Price
+            .col-sm-10
+                input#inputPrice.form-control(type='text' placeholder='Price' name="Price")
+        .form-group.row
+            label.col-sm-2.col-form-label(for='inputRating') Rating
+            .col-sm-10
+                input#inputRating.form-control(type='text' placeholder='Rating' name="Rating")
+        .form-group.row
+            label.col-sm-2.col-form-label(for='inputImage') Image
+            .col-sm-10
+                input#inputImage.form-control(type='text' placeholder='Image' name="Image")
+        button.btn.btn-primary(href="/admin/create") Create
